@@ -1,0 +1,23 @@
+.cart-no {
+  position: absolute;
+  min-width: 25px;
+  min-height: 25px;
+  border-radius: 50%;
+  background: greenyellow;
+  color: white;
+  text-align: center;
+  top: -12px;
+}
+
+a {
+  text-decoration: none;
+  color: #343a40;
+  cursor: pointer;
+  &.active {
+    color: orange;
+  }
+}
+
+.logo {
+  cursor: pointer;
+}

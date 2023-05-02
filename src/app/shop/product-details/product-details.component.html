@@ -1,0 +1,16 @@
+<div class="row" *ngIf="product">
+  <div class="col-6">
+    <img src="{{ product.pictureUrl }}" alt="{{ product.name }}" />
+  </div>
+  <div class="col-6 mt-5">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.price | currency : "RON " : "symbol" }}</p>
+    <div>
+      <button class="btn btn-outline-secondary me-4">Adauga in cos</button>
+    </div>
+    <div class="row mt-4">
+      <h4>Descriere</h4>
+      <p>{{ product.description }}</p>
+    </div>
+  </div>
+</div>
